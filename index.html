@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mainichi Car service</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mainichi Car service</h1>
+    <nav id="navMenu">
+      <a href="#servicos" class="active">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div id="menuToggle" aria-label="Toggle menu" tabindex="0" role="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+    <div class="particles"></div>
+
+    <section class="hero" aria-label="Imagem de destaque Garagem 347">
+      <h2>Seu carro na melhor mão!</h2>
+    </section>
+    
+    <section id="servicos" aria-label="Seção de serviços">
+        <h2>Serviços que oferecemos</h2>
+        <div class="servicos-grid">
+            <article class="servico-card hidden" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80" alt="Revisão de motor" />
+                <h3>Revisão de Motor</h3>
+                <div class="avaliacao">
+                <div class="estrelas" data-service-id="1">
+                    <span data-value="1">&#9733;</span>
+                    <span data-value="2">&#9733;</span>
+                    <span data-value="3">&#9733;</span>
+                    <span data-value="4">&#9733;</span>
+                    <span data-value="5">&#9733;</span>
+                </div>
+                <textarea placeholder="Deixe seu comentário..."></textarea>
+                <button class="btn-avaliar">Enviar Avaliação</button>
+                <div class="comentarios"></div>
+                </div>
+            </article>
+            <article class="servico-card hidden" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=400&q=80" alt="Troca de óleo" />
+                <h3>Troca de Óleo</h3>
+                <div class="avaliacao">
+                <div class="estrelas" data-service-id="2">
+                    <span data-value="1">&#9733;</span>
+                    <span data-value="2">&#9733;</span>
+                    <span data-value="3">&#9733;</span>
+                    <span data-value="4">&#9733;</span>
+                    <span data-value="5">&#9733;</span>
+                </div>
+                <textarea placeholder="Deixe seu comentário..."></textarea>
+                <button class="btn-avaliar">Enviar Avaliação</button>
+                <div class="comentarios"></div>
+                </div>
+            </article>
+            <article class="servico-card hidden" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=400&q=80" alt="Alinhamento e balanceamento" />
+                <h3>Alinhamento e Balanceamento</h3>
+                <div class="avaliacao">
+                <div class="estrelas" data-service-id="3">
+                    <span data-value="1">&#9733;</span>
+                    <span data-value="2">&#9733;</span>
+                    <span data-value="3">&#9733;</span>
+                    <span data-value="4">&#9733;</span>
+                    <span data-value="5">&#9733;</span>
+                </div>
+                <textarea placeholder="Deixe seu comentário..."></textarea>
+                <button class="btn-avaliar">Enviar Avaliação</button>
+                <div class="comentarios"></div>
+                </div>
+            </article>
+            <article class="servico-card hidden" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80" alt="Sistema de freios" />
+                <h3>Manutenção de Freios</h3>
+                <div class="avaliacao">
+                <div class="estrelas" data-service-id="4">
+                    <span data-value="1">&#9733;</span>
+                    <span data-value="2">&#9733;</span>
+                    <span data-value="3">&#9733;</span>
+                    <span data-value="4">&#9733;</span>
+                    <span data-value="5">&#9733;</span>
+                </div>
+                <textarea placeholder="Deixe seu comentário..."></textarea>
+                <button class="btn-avaliar">Enviar Avaliação</button>
+                <div class="comentarios"></div>
+                </div>
+            </article>
+            <article class="servico-card hidden" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80" alt="Sistema de suspensão" />
+                <h3>Suspensão</h3>
+                <div class="avaliacao">
+                <div class="estrelas" data-service-id="5">
+                    <span data-value="1">&#9733;</span>
+                    <span data-value="2">&#9733;</span>
+                    <span data-value="3">&#9733;</span>
+                    <span data-value="4">&#9733;</span>
+                    <span data-value="5">&#9733;</span>
+                </div>
+                <textarea placeholder="Deixe seu comentário..."></textarea>
+                <button class="btn-avaliar">Enviar Avaliação</button>
+                <div class="comentarios"></div>
+                </div>
+            </article>
+            <article class="servico-card hidden" tabindex="0">
+                <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80" alt="Diagnóstico veicular" />
+                <h3>Diagnóstico Veicular</h3>
+                <div class="avaliacao">
+                <div class="estrelas" data-service-id="6">
+                    <span data-value="1">&#9733;</span>
+                    <span data-value="2">&#9733;</span>
+                    <span data-value="3">&#9733;</span>
+                    <span data-value="4">&#9733;</span>
+                    <span data-value="5">&#9733;</span>
+                    <span data-value="6">&#9733;</span>
+                </div>
+                <textarea placeholder="Deixe seu comentário..."></textarea>
+                <button class="btn-avaliar">Enviar Avaliação</button>
+                <div class="comentarios"></div>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+  <section id="sobre" class="sobre-nos" aria-label="Sobre a empresa">
+    <h2>Sobre a Mainichi Car service</h2>
+    <p>
+      A Mainichi Car service é uma oficina mecânica especializada em mecânica geral, com atendimento personalizado e foco na qualidade do serviço. Contamos com equipe experiente e equipamentos de última geração para cuidar do seu veículo.
+    </p>
+    <p>
+      Nossos serviços abrangem manutenção preventiva, reparos, diagnósticos, troca de peças, alinhamento e balanceamento, entre outros. Garantimos transparência e confiança para que seu carro esteja sempre nas melhores condições.
+    </p>
+  </section>
+
+  <section id="depoimentos" class="depoimentos" aria-label="Depoimentos de clientes">
+    <h2>Depoimentos</h2>
+    <article class="depoimento active" tabindex="0" aria-live="polite">
+      <p>“Excelente atendimento e rapidez na manutenção. Recomendo muito!”</p>
+      <cite>- Carlos M.</cite>
+    </article>
+    <article class="depoimento" tabindex="0" aria-live="polite">
+      <p>“Profissionais competentes e atendimento amigável. Meu carro nunca esteve tão bem cuidado.”</p>
+      <cite>- Ana P.</cite>
+    </article>
+    <article class="depoimento" tabindex="0" aria-live="polite">
+      <p>“Ótima oficina, preços justos e serviços de qualidade.”</p>
+      <cite>- João L.</cite>
+    </article>
+  </section>
+
+  <section id="contato" class="contact" aria-label="Formulário de contato">
+    <h2>Fale conosco</h2>
+    <form id="form-contato" action="https://formsubmit.co/joaovitorleonardo36@gmail.com" method="POST" novalidate>
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="nome" placeholder="Seu nome" required aria-required="true" />
+      <input type="email" name="email" placeholder="Seu e-mail" required aria-required="true" />
+      <input type="tel" name="telefone" placeholder="Seu telefone" />
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required aria-required="true"></textarea>
+      <button type="submit">Enviar Mensagem</button>
+      <p id="mensagem-sucesso" role="alert" aria-live="assertive">Mensagem enviada com sucesso!</p>
+    </form>
+</section>
+
+ <div class="social-buttons">
+     <a href="https://wa.me/5511972659272?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" 
+       class="whatsapp-button" 
+       target="_blank" 
+       aria-label="Fale conosco no WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
+    </a>
+ </div>
+
+<button id="topBtn" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+<section class="localizacao" id="localizacao">
+    <h2>Onde Estamos</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.497241623823!2d-46.565470824891474!3d-23.515223759489415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42349a30f3d3%3A0x58b582405645382f!2sR.%20Gonçalves%2C%20Dias%2061%20-%20São%20Caetano%2C-%20SP%2C%2009626-080!5e0!3m2!1spt-BR!2sbr!4v1716735671364!5m2!1spt-BR!2sbr" 
+      width="600" 
+      height="300" 
+      style="border:0; border-radius:10px; width: 100%; max-width:1200px;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>
+      © 2025 Mainichi Car service - Rua Gonçalves Dias, 61 | 
+      <a href="https://instagram.com/joao.dias_07" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+      WhatsApp: (11) 97265-9272
+    </p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

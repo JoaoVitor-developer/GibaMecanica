@@ -1,0 +1,461 @@
+ /* RESET E BASE */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      color: #222;
+      scroll-behavior: smooth;
+      background: #121212;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    /* HEADER */
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0; left: 0;
+      background: #212121;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 10000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #bbb;
+      font-weight: 600;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 1rem;
+    }
+    nav a.active,
+    nav a:hover {
+      color: #fff;
+      background-color: #e63946;
+    }
+    /* HAMBURGER MENU MOBILE */
+    #menuToggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 6px;
+    }
+    #menuToggle span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: white;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+    /* NAV RESPONSIVO */
+    @media (max-width: 768px) {
+      nav {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        background: #212121;
+        flex-direction: column;
+        width: 200px;
+        height: calc(100% - 60px);
+        padding: 1rem;
+        gap: 1rem;
+        transition: right 0.3s ease;
+        border-left: 3px solid #e63946;
+      }
+      nav.open {
+        right: 0;
+      }
+      #menuToggle {
+        display: flex;
+      }
+    }
+    /* HERO */
+    .hero {
+      height: 420px;
+      background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 60px;
+      position: relative;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(230, 57, 70, 0.85);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      max-width: 90vw;
+      text-align: center;
+      letter-spacing: 3px;
+    }
+    /* SEÇÕES */
+    section {
+      max-width: 1100px;
+      margin: 2.5rem auto 4rem;
+      padding: 0 1rem;
+    }
+    section h2 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #e63946;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+    }
+    /* SERVIÇOS - GRID */
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .servico-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    .servico-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(230, 57, 70, 0.4);
+      cursor: pointer;
+    }
+    .servico-card img {
+      height: 180px;
+      object-fit: cover;
+      width: 100%;
+      border-bottom: 4px solid #e63946;
+      transition: transform 0.4s ease;
+    }
+    .servico-card:hover img {
+      transform: scale(1.05);
+    }
+    .servico-card h3 {
+      margin: 1rem;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #212121;
+      text-align: center;
+    }
+    /* SOBRE NÓS */
+    .sobre-nos {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem 3rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      color: #333;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .sobre-nos p {
+      max-width: 900px;
+      margin: 0 auto 1rem;
+    }
+    /* CARDS SERVIÇOS ADICIONAIS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.8rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 22px rgba(230, 57, 70, 0.35);
+      cursor: pointer;
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-bottom: 3px solid #e63946;
+      transition: transform 0.4s ease;
+    }
+    .card:hover img {
+      transform: scale(1.05);
+    }
+    .card h3 {
+      padding: 1rem;
+      font-weight: 600;
+      font-size: 1.15rem;
+      text-align: center;
+      color: #212121;
+    }
+    /* DEPOIMENTOS (slider simples) */
+    .depoimentos {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 1rem 2rem;
+      background: #e63946;
+      border-radius: 20px;
+      color: white;
+      box-shadow: 0 8px 20px rgba(230, 57, 70, 0.6);
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+    }
+    .depoimentos h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+      color: white;
+    }
+    .depoimento {
+      display: none;
+      font-style: italic;
+      font-size: 1.15rem;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .depoimento.active {
+      display: block;
+      animation: fadeSlideIn 0.8s ease forwards;
+    }
+    .depoimento p {
+      margin-bottom: 0.8rem;
+    }
+    .depoimento cite {
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+
+    /* animação fadeSlideIn */
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    /* CONTATO */
+    .contact {
+      max-width: 600px;
+      margin: 3rem auto 6rem;
+      background: white;
+      padding: 2rem 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #e63946;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    input, textarea {
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+      transition: border-color 0.3s ease;
+      resize: vertical;
+      font-family: inherit;
+    }
+    input:focus, textarea:focus {
+      border-color: #e63946;
+      outline: none;
+    }
+    button[type="submit"] {
+      background: #e63946;
+      color: white;
+      border: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button[type="submit"]:hover {
+      background: #b32b3b;
+    }
+    #mensagem-sucesso {
+      color: #2a9d8f;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 1rem;
+      display: none;
+    }
+    /* RODAPÉ */
+    footer {
+      background: #212121;
+      color: #ccc;
+      text-align: center;
+      padding: 1.8rem 1rem;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+    footer a {
+      color: #e63946;
+      font-weight: 600;
+    }
+    /* BOTÃO TOPO */
+    #topBtn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #e63946;
+      border: none;
+      padding: 14px 18px;
+      border-radius: 50%;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(230, 57, 70, 0.5);
+      display: none;
+      transition: background-color 0.3s ease;
+      z-index: 10000;
+    }
+    #topBtn:hover {
+      background: #b32b3b;
+    }
+    /* ANIMAÇÕES GERAIS */
+    .hidden {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    .whatsapp-button {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .whatsapp-button img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.particles span {
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: rgba(230, 57, 70, 0.5);
+  border-radius: 50%;
+  animation: moveParticle linear infinite;
+}
+
+@keyframes moveParticle {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(100px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.avaliacao {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.estrelas {
+  cursor: pointer;
+  color: #ccc;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.estrelas span:hover,
+.estrelas span.hovered,
+.estrelas span.selected {
+  color: #e63946;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.btn-avaliar {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-avaliar:hover {
+  background: #b32b3b;
+}
+
+.comentarios {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #444;
+  max-height: 150px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}
