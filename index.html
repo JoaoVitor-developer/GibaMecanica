@@ -134,6 +134,17 @@
             </article>
         </div>
     </section>
+
+     <section id="contato" class="contact" aria-label="Formulário de contato">
+   <h2>Fale Conosco</h2>
+    <form class="contact-form" id="form-contato">
+        <input type="text" name="nome" id="nome-contato" placeholder="Seu nome" required />
+        <input type="email" name="email" id="email-contato" placeholder="Seu e-mail" required />
+        <input type="tel" name="telefone" id="telefone-contato" placeholder="Seu telefone" required />
+        <textarea name="mensagem" id="mensagem-contato" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
     
   <section id="sobre" class="sobre-nos" aria-label="Sobre a empresa">
     <h2>Sobre a Mainichi Car service</h2>
@@ -160,19 +171,6 @@
       <cite>- João L.</cite>
     </article>
   </section>
-
-  <section id="contato" class="contact" aria-label="Formulário de contato">
-    <h2>Fale conosco</h2>
-    <form id="form-contato" action="https://formsubmit.co/joaovitorleonardo36@gmail.com" method="POST" novalidate>
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="text" name="nome" placeholder="Seu nome" required aria-required="true" />
-      <input type="email" name="email" placeholder="Seu e-mail" required aria-required="true" />
-      <input type="tel" name="telefone" placeholder="Seu telefone" />
-      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required aria-required="true"></textarea>
-      <button type="submit">Enviar Mensagem</button>
-      <p id="mensagem-sucesso" role="alert" aria-live="assertive">Mensagem enviada com sucesso!</p>
-    </form>
-</section>
 
  <div class="social-buttons">
      <a href="https://wa.me/5511972659272?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos!" 

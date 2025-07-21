@@ -64,6 +64,7 @@
     });
 
     // Envio do formulário via fetch
+    /*
     document.getElementById('form-contato').addEventListener('submit', e => {
       e.preventDefault();
       const form = e.target;
@@ -86,6 +87,7 @@
       })
       .catch(() => alert('Erro ao enviar. Tente novamente.'));
     });
+    */
 
     // Slider simples de depoimentos
     const depoimentos = document.querySelectorAll('.depoimento');
@@ -208,3 +210,22 @@ document.querySelectorAll('.avaliacao').forEach(avaliacao => {
 
   mostrarAvaliacoes();
 });
+
+ document.getElementById('form-contato').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Seu número de WhatsApp (substitua pelo seu número no formato 5511999999999)
+        const seuNumeroWhatsApp = '5511972659272';
+        
+        // Coletando os dados do formulário
+        const nome = encodeURIComponent(document.getElementById('nome-contato').value);
+        const telefone = encodeURIComponent(document.getElementById('telefone-contato').value);
+        const email = encodeURIComponent(document.getElementById('email-contato').value);
+        const mensagem = encodeURIComponent(document.getElementById('mensagem-contato').value);
+        
+        // Criando a mensagem formatada
+        const texto = `*Nova mensagem do site Mainichi Car Service:*%0A%0A*Nome:* ${nome}%0A*Telefone:* ${telefone}%0A*Email:* ${email}%0A*Mensagem:* ${mensagem}`;
+        
+        // Redirecionando para o WhatsApp
+        window.location.href = `https://wa.me/${seuNumeroWhatsApp}?text=${texto}`;
+    });
