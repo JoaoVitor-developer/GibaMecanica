@@ -63,32 +63,6 @@
       }
     });
 
-    // Envio do formulário via fetch
-    /*
-    document.getElementById('form-contato').addEventListener('submit', e => {
-      e.preventDefault();
-      const form = e.target;
-      const sucesso = document.getElementById('mensagem-sucesso');
-      const formData = new FormData(form);
-
-      fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: { 'Accept': 'application/json' },
-      })
-      .then(response => {
-        if(response.ok) {
-          form.reset();
-          sucesso.style.display = 'block';
-          setTimeout(() => { sucesso.style.display = 'none'; }, 5000);
-        } else {
-          alert('Erro ao enviar. Tente novamente.');
-        }
-      })
-      .catch(() => alert('Erro ao enviar. Tente novamente.'));
-    });
-    */
-
     // Slider simples de depoimentos
     const depoimentos = document.querySelectorAll('.depoimento');
     let depoIndex = 0;
