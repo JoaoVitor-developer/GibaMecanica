@@ -9,6 +9,10 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Mainichi Car Service - Oficina mecânica especializada em São Paulo. Agende revisão, manutenção de freios, troca de óleo e mais.">
+  <meta name="author" content="Mainichi Car Service">
+  <meta name="keywords" content="oficina mecânica, revisão automotiva, freios, troca de óleo, São Paulo">
+
 </head>
 <body>
     <header>
@@ -19,12 +23,12 @@
 
     <nav id="navMenu">
       <a href="#servicos" class="active">Serviços</a>
+      <a href="#contato">Contato</a>
       <a href="#sobre">Sobre</a>
       <a href="#depoimentos">Depoimentos</a>
-      <a href="#contato">Contato</a>
     </nav>
     
-    <div id="menuToggle" aria-label="Toggle menu" tabindex="0" role="button">
+    <div id="menuToggle" aria-label="Toggle menu" aria-expanded="false" tabindex="0" role="button">
       <span></span>
       <span></span>
       <span></span>
@@ -121,7 +125,7 @@
                 </div>
             </article>
             <article class="servico-card hidden" tabindex="0">
-                <img src="./imagens/diagnostico.jpg" alt="Diagnóstico veicular" />
+                <img src="./imagens/diagnostico.jpg" alt="Diagnóstico veicular" loading="lazy"/>
                 <h3>Diagnóstico Veicular</h3>
                 <div class="avaliacao">
                 <div class="estrelas" data-service-id="6">
