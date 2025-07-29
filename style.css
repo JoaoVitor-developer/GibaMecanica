@@ -325,7 +325,7 @@
     .contact h2 {
       text-align: center;
       margin-bottom: 2rem;
-      color: #e63946;
+      color: rgb(52, 69, 218);
     }
 
     form {
@@ -350,7 +350,7 @@
     }
 
     button[type="submit"] {
-      background: #e63946;
+      background: rgb(52, 69, 218);
       color: white;
       border: none;
       font-weight: 700;
@@ -362,7 +362,7 @@
     }
 
     button[type="submit"]:hover {
-      background: #b32b3b;
+      background: rgba(52, 69, 218, 0.686);
     }
 
     #mensagem-sucesso {
@@ -389,6 +389,7 @@
     }
 
     /* BOTÃO TOPO */
+/*
     #topBtn {
       position: fixed;
       bottom: 25px;
@@ -408,6 +409,8 @@
     #topBtn:hover {
       background: #b32b3b;
     }
+*/
+
     /* ANIMAÇÕES GERAIS */
     .hidden {
       opacity: 0;
