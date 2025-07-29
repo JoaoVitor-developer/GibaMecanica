@@ -2,6 +2,7 @@
     *, *::before, *::after {
       box-sizing: border-box;
     }
+
     body {
       margin: 0; 
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -148,7 +149,8 @@
     
     .hero h2 {
       font-size: 3rem;
-      background: rgba(230, 57, 70, 0.85);
+      background: rgba(34, 33, 33, 0.625);
+      color: rgb(52, 69, 218);
       padding: 1rem 2rem;
       border-radius: 12px;
       max-width: 90vw;
@@ -166,7 +168,7 @@
       font-size: 2.2rem;
       text-align: center;
       margin-bottom: 2rem;
-      color: #e63946;
+      color: rgb(52, 69, 218);
       letter-spacing: 1.5px;
       font-weight: 700;
     }
@@ -187,7 +189,7 @@
     }
     .servico-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 10px 25px rgba(230, 57, 70, 0.4);
+      box-shadow: 0 10px 25px rgba(52, 69, 218, 0.686);
       cursor: pointer;
     }
     .servico-card img {
@@ -287,7 +289,6 @@
       margin: 0 auto;
       line-height: 1.6;
     }
-
 
     .depoimento.active {
       display: block;
@@ -508,28 +509,30 @@
   .estrelas span:hover,
   .estrelas span.hovered,
   .estrelas span.selected {
-    color: #e63946;
-  }
-
-  textarea {
-    width: 100%;
-    margin: 10px 0;
-    resize: vertical;
-    min-height: 60px;
-  }
-
-  .btn-avaliar {
-    background: #e63946;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-
-  .btn-avaliar:hover {
-    background: #b32b3b;
+      color: rgb(52, 69, 218);
+    }
+    
+    textarea {
+      width: 100%;
+      margin: 10px 0;
+      resize: vertical;
+      min-height: 60px;
+    }
+    
+    .btn-avaliar {
+      background: rgb(52, 69, 218);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    .btn-avaliar:hover {
+      background: rgba(53, 26, 227, 0.322);
+      color: rgb(52, 69, 218);
+    
   }
 
   .comentarios {
