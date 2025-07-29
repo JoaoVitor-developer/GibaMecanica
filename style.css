@@ -83,6 +83,12 @@
       border-radius: 12px;
     }
 
+    .logo-bosch {
+      height: 85px;
+      margin-left: 115px;
+      border-radius: 12px;
+    }
+
     /* HAMBURGER MENU MOBILE */
     #menuToggle {
       display: none;
