@@ -85,7 +85,7 @@
 
     .logo-bosch {
       height: 85px;
-      margin-left: 115px;
+      margin-left: 130px;
       border-radius: 12px;
     }
 
@@ -183,6 +183,10 @@
       color: rgb(52, 69, 218);
       letter-spacing: 1.5px;
       font-weight: 700;
+    }
+
+    #contato {
+      display: none;
     }
 
     /* SERVIÇOS - GRID */

@@ -205,3 +205,14 @@ document.querySelectorAll('.avaliacao').forEach(avaliacao => {
         // Redirecionando para o WhatsApp
         window.location.href = `https://wa.me/${seuNumeroWhatsApp}?text=${texto}`;
     });
+
+
+// Mostrar o formulário de contato ao clicar no link do menu
+document.querySelector('a[href="#contato"]').addEventListener('click', (e) => {
+  e.preventDefault();
+  const secContato = document.getElementById('contato');
+  if (secContato) {
+    secContato.style.display = 'block';
+    secContato.scrollIntoView({ behavior: 'smooth' });
+  }
+});
