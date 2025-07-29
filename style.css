@@ -265,10 +265,10 @@
       max-width: 900px;
       margin: 3rem auto;
       padding: 1rem 2rem;
-      background: #e63946;
+      background: #fca311;
       border-radius: 20px;
       color: white;
-      box-shadow: 0 8px 20px rgba(230, 57, 70, 0.6);
+      box-shadow: 0 8px 20px #fca21177;
       position: relative;
       overflow: hidden;
       user-select: none;
@@ -384,7 +384,7 @@
     }
 
     footer a {
-      color: #e63946;
+      color: rgb(52, 69, 218);
       font-weight: 600;
     }
 
