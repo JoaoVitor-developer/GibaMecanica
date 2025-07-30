@@ -515,6 +515,19 @@
     height: 35px;
   }
 
+    .instagram-button {
+    position: fixed;
+    bottom: 18px; /* acima do Google e WhatsApp */
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .instagram-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 45%;
+  }
+
     .particles {
     position: fixed;
     top: 0;
