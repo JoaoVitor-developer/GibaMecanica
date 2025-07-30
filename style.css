@@ -310,6 +310,36 @@
       color: #212121;
     }
 
+    .servicos-destaque {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .card-servico {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      width: 360px;
+      transition: transform 0.3s ease;
+    }
+
+    .card-servico img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-servico:hover {
+      transform: translateY(-5px);
+    }
+
+
 /* DEPOIMENTOS (slider simples) 
     .depoimentos {
       max-width: 900px;
@@ -633,4 +663,51 @@
   height: auto;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay escuro */
+#imagem-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 998;
+}
+
+/* Modal central com a imagem */
+#imagem-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  margin-top: 55px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+#imagem-modal img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+}
+
+/* Botão de fechar */
+.fechar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
 }

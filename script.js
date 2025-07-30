@@ -232,3 +232,30 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.style.display = 'none';
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const imagens = document.querySelectorAll('.card-imagem');
+  const modal = document.getElementById('imagem-modal');
+  const overlay = document.getElementById('imagem-modal-overlay');
+  const imagemExpandida = document.getElementById('imagem-expandida');
+  const fecharBtn = document.querySelector('.fechar-modal');
+
+  imagens.forEach(img => {
+    img.addEventListener('click', () => {
+      const src = img.getAttribute('data-src');
+      imagemExpandida.src = src;
+      modal.style.display = 'block';
+      overlay.style.display = 'block';
+    });
+  });
+
+  fecharBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+  });
+
+  overlay.addEventListener('click', () => {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+  });
+});
