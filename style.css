@@ -310,7 +310,7 @@
       color: #212121;
     }
 
-    /* DEPOIMENTOS (slider simples) */
+/* DEPOIMENTOS (slider simples) 
     .depoimentos {
       max-width: 900px;
       margin: 3rem auto;
@@ -355,7 +355,7 @@
       font-size: 1rem;
       opacity: 0.85;
     }
-
+*/
     /* animação fadeSlideIn */
     @keyframes fadeSlideIn {
       from { opacity: 0; transform: translateY(30px);}
