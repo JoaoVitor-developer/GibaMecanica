@@ -60,7 +60,7 @@
     // Alerta de boas vindas na primeira visita
     window.addEventListener('DOMContentLoaded', () => {
       if (!sessionStorage.getItem('visited')) {
-        alert('Bem-vindo à Garagem 347 - Mecânica Geral!');
+        alert('Bem-vindo à Mainichi Car Service!');
         sessionStorage.setItem('visited', 'true');
       }
     });
