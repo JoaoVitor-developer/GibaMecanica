@@ -83,9 +83,11 @@
     }
 
     .logo-bosch {
-      height: 85px;
+      height: auto;
       margin-left: 10px;
       border-radius: 12px;
+      max-width: 100%;
+      display: block;
     }
 
     /* HAMBURGER MENU MOBILE */
@@ -102,48 +104,6 @@
       background: white;
       border-radius: 2px;
       transition: 0.3s;
-    }
-    /* NAV RESPONSIVO */
-    @media (max-width: 768px) {
-      nav {
-       position: fixed;
-        top: 60px;
-        right: -100%;
-        background: #212121;
-        flex-direction: column;
-        width: 200px;
-        height: calc(100% - 60px);
-        padding: 1rem;
-        gap: 1rem;
-        transition: right 0.3s ease;
-        border-left: 3px solid #e63946;
-      }
-
-      .nav ul {
-        flex-direction: column;
-        gap: 1rem;
-      }
-      
-      nav.open {
-        right: 0;
-      }
-      
-      #menuToggle {
-        display: flex;
-      }
-
-      .logo-img {
-        width: 120px; /* Também aumentada */
-      }
-
-      .logo-container h1 {
-        font-size: 1rem; /* Tamanho do texto permanece o mesmo */
-      }
-
-      .sobre-grid {
-        flex-direction: column;
-        align-items: center;
-      }
     }
 
     /* HERO */
@@ -469,7 +429,7 @@
     }
 
     /* BOTÃO TOPO */
-/*
+   /*
     #topBtn {
       position: fixed;
       bottom: 25px;
@@ -489,7 +449,7 @@
     #topBtn:hover {
       background: #b32b3b;
     }
-*/
+    */
 
     /* ANIMAÇÕES GERAIS */
     .hidden {
@@ -710,4 +670,65 @@
   font-size: 2rem;
   color: #333;
   cursor: pointer;
+}
+
+ @media (max-width: 768px) {
+      nav {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        background: #212121;
+        flex-direction: column;
+        width: 200px;
+        height: calc(100% - 60px);
+        padding: 1rem;
+        gap: 1rem;
+        transition: right 0.3s ease;
+        border-left: 3px solid #e63946;
+      }
+      .hero h2{
+        font-size: 35px;
+      }
+
+      .nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      nav.open {
+        right: 0;
+      }
+      
+      #menuToggle {
+        display: flex;
+      }
+
+      .logo-bosch {
+        width: 120px;
+      }
+      
+      .logo-img {
+        width: 120px; /* Também aumentada */
+        height: 60px;
+        border-radius: 12px;
+      }
+      
+      .logo-img2 {
+        display: none;
+      }
+
+      .logo-container h1 {
+        font-size: 1rem; /* Tamanho do texto permanece o mesmo */
+      }
+
+      .sobre-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
+@media (max-width: 480px) {
+  .logo-bosch {
+    width: 100px;
+  }
 }
