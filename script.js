@@ -207,12 +207,28 @@ document.querySelectorAll('.avaliacao').forEach(avaliacao => {
     });
 
 
-// Mostrar o formulário de contato ao clicar no link do menu
-document.querySelector('a[href="#contato"]').addEventListener('click', (e) => {
-  e.preventDefault();
-  const secContato = document.getElementById('contato');
-  if (secContato) {
-    secContato.style.display = 'block';
-    secContato.scrollIntoView({ behavior: 'smooth' });
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  const contatoLink = document.querySelector('a[href="#contato"]');
+  const contatoModal = document.getElementById('contato');
+  const overlay = document.getElementById('contato-overlay');
+  const closeBtn = document.querySelector('#contato .close-btn');
+
+  // Ao clicar em "Contato"
+  contatoLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    contatoModal.style.display = 'block';
+    overlay.style.display = 'block';
+  });
+
+  // Ao clicar no botão de fechar
+  closeBtn.addEventListener('click', () => {
+    contatoModal.style.display = 'none';
+    overlay.style.display = 'none';
+  });
+
+  // Clicar fora do formulário fecha também
+  overlay.addEventListener('click', () => {
+    contatoModal.style.display = 'none';
+    overlay.style.display = 'none';
+  });
 });
