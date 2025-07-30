@@ -284,7 +284,7 @@
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       text-align: center;
-      width: 360px;
+      width: 460px;
       transition: transform 0.3s ease;
     }
 
@@ -297,6 +297,10 @@
 
     .card-servico:hover {
       transform: translateY(-5px);
+    }
+
+    .card-servico h3 {
+      font-size: 17px;
     }
 
 
